@@ -33,7 +33,7 @@ function Post() {
 
     const token = localStorage.getItem("token");
 
-    const response = await fetch(`http://localhost:8000/api/v1/job/post`, {
+    const response = await fetch(`https://jobportal-fmlh.onrender.com/api/v1/job/post`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
