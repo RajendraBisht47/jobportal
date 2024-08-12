@@ -26,7 +26,7 @@ function RegisterCompany() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:8000/api/v1/company/register`,
+      `https://jobportal-fmlh.onrender.com/api/v1/company/register`,
       {
         method: "POST",
         headers: {
