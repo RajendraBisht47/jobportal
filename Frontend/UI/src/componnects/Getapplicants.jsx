@@ -10,7 +10,7 @@ function Getapplicants() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `http://localhost:8000/api/v1/application/status/${id}/update`,
+        `https://jobportal-fmlh.onrender.com/api/v1/application/status/${id}/update`,
         {
           method: "PUT",
           headers: {
@@ -46,7 +46,7 @@ function Getapplicants() {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          `http://localhost:8000/api/v1/application/${job._id}/applicants`,
+          `https://jobportal-fmlh.onrender.com/api/v1/application/${job._id}/applicants`,
           {
             method: "GET",
             headers: {
