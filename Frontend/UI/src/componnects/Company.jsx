@@ -41,7 +41,7 @@ function Comapany() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:8000/api/v1/company/update/${company._id}`,
+      `https://jobportal-fmlh.onrender.com/api/v1/company/update/${company._id}`,
       {
         method: "PUT",
         headers: {
