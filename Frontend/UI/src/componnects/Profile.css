@@ -1,0 +1,28 @@
+.profileImage {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.m-2 {
+  justify-content: center;
+  display: flex;
+  margin: 0.5rem !important;
+  align-items: center;
+  gap: 5px;
+}
