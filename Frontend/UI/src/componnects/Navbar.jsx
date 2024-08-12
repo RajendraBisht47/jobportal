@@ -9,7 +9,7 @@ function Navbar() {
 
   useEffect(() => {
     const fetchUserDetails = async () => {
-      const response = await fetch("http://localhost:8000/", {
+      const response = await fetch("https://jobportal-fmlh.onrender.com/", {
         credentials: "include",
       });
       const res = await response.json();
@@ -17,7 +17,7 @@ function Navbar() {
         setUserDetail(res.user);
         if (res?.user?.role === "recruiter") {
           const response1 = await fetch(
-            "http://localhost:8000/api/v1/company/get",
+            "https://jobportal-fmlh.onrender.com/api/v1/company/get",
             {
               credentials: "include",
             }
@@ -41,7 +41,7 @@ function Navbar() {
   }, []);
 
   const logout = async () => {
-    const response = await fetch("http://localhost:8000/api/v1/user/logout", {
+    const response = await fetch(https://jobportal-fmlh.onrender.com/api/v1/user/logout", {
       method: "POST",
       credentials: "include",
     });
