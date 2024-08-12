@@ -11,7 +11,7 @@ function Album() {
     const fetchJobs = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:8000/api/v1/job/get", {
+        const response = await fetch("https://jobportal-fmlh.onrender.com/api/v1/job/get", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
