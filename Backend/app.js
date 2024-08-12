@@ -24,6 +24,13 @@ connectDB();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+app.use(cors({
+  origin: 'https://jobportal-1-vrqu.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 // app.use(
 //   cors({
 //     origin: "https://jobportal-fmlh.onrender.com",
