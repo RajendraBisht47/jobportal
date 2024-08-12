@@ -43,7 +43,7 @@ function Profile() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      "http://localhost:8000/api/v1/user/profile/update",
+      "https://jobportal-fmlh.onrender.com/api/v1/user/profile/update",
       {
         method: "PUT",
         headers: {
