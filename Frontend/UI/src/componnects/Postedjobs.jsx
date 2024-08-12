@@ -11,7 +11,7 @@ function Postedjobs() {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "http://localhost:8000/api/v1/job/getadminjobs",
+          "https://jobportal-fmlh.onrender.com/api/v1/job/getadminjobs",
           {
             method: "GET",
             headers: {
