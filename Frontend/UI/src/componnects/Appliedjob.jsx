@@ -11,7 +11,7 @@ function AppliedJob() {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "http://localhost:8000/api/v1/application/get",
+          "https://jobportal-fmlh.onrender.com/api/v1/application/get",
           {
             method: "GET",
             headers: {
