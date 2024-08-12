@@ -41,7 +41,7 @@ function Navbar() {
   }, []);
 
   const logout = async () => {
-    const response = await fetch(https://jobportal-fmlh.onrender.com/api/v1/user/logout", {
+    const response = await fetch("https://jobportal-fmlh.onrender.com/api/v1/user/logout", {
       method: "POST",
       credentials: "include",
     });
